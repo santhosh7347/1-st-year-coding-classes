@@ -1,0 +1,15 @@
+/*a program to count no.of words in a string */
+#include<stdio.h>
+int main()
+{
+	char str[100];
+	int i,count=0;
+	printf("Enter str :\n");
+	scanf("%[^\n]s",str);
+	for(i=0;str[i]!='\0';i++)
+	{
+	if(str[i]==' '&&str[i+1]!=' ')
+	  count++;
+    }
+	printf("\nno.of words are=%d",count+1);
+}
