@@ -1,3 +1,4 @@
+/* Program to read a  string and convert alternative character into upper case */
 #include<stdio.h>
 	void main()
 {
