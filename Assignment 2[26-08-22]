@@ -1,0 +1,21 @@
+//2. Program to print given string is palindrome or not without using string2 & without using string functions
+#include<stdio.h>
+	void main()
+{
+    char a[200];
+    int i,s=0,c=0;
+    scanf("%s",a);
+     for (i=0;a[i]!='\0';i++)
+        s++;
+     for(i=0;i<=s/2;i++)
+     {
+     	if(a[i]==a[(s)-i-1])
+     	{
+     		c++;
+		 }
+	}
+	if(c==i)
+	printf("palin");
+	else
+	printf("not palin");
+}
