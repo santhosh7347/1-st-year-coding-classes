@@ -1,0 +1,25 @@
+//1. Program to read a string and print count of uppercase characters, lowercasenumbers 
+#include<stdio.h>
+void main()
+{
+	char s[100];
+	int n=0,l=0,u=0,i,c=0;
+	scanf("%s",s);
+	 for(i=0;s[i]!='\0';i++)
+	  {
+	  if(s[i]>='A'&&s[i]<='Z')
+	  u++;
+	  else
+	  if(s[i]>='a'&&s[i]<='z')
+	  l++;
+	  else
+	  if(s[i]<'9'&&s[i]>'0' )
+	  n++;
+      }
+	  printf("\nupper case of string=%d",u);
+	  printf("\nlower case of string=%d",l);
+	  printf("\nnumber in the string=%d",n);
+      
+      
+	  
+}
